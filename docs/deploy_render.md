@@ -15,6 +15,9 @@ Steps:
    - DATABASE_URL = your PostgreSQL connection string (for example: postgres://user:pass@host:5432/dbname)
    - JWT_SECRET_KEY = a secure random string used by Flask-JWT-Extended
    - PORT = Render sets this automatically at runtime; the container will use that value
+    - MPESA_CONSUMER_KEY = your Daraja consumer key (do NOT commit)
+    - MPESA_CONSUMER_SECRET = your Daraja consumer secret (do NOT commit)
+    - MPESA_PASSKEY = your Daraja passkey (if applicable)
 
 4. Render will build the Docker image using the `Dockerfile`. The container runs Gunicorn with the WSGI app specified in `app/wsgi.py`.
 
